@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SmartLED</string>
+
+    <string name="home">Home</string>
+    <string name="office">Office</string>
+    <string name="action_settings">Settings</string>
+    <!--Components Strings -->
+    <string name="settings_description">Enter the IP-ADDRESS:Port, Network Name and Wifi Password and Unique-ID to the corresponding fields to take control over your wifi Controlled LED Bulb \n
+        Note : This should be used ONCE ONLY or Whenver there is utter requirement.</string>
+    <string name="connect">Connect</string>
+    <string name="setup">Setup</string>
+
+    <!--Titles -->
+    <string name="title_activity_at_home">AtHome</string>
+    <string name="spinner_title">Devices List</string>
+    <string name="title_activity_office">Office</string>
+    <string name="title_help">Help</string>
+    <string name="title_about">About</string>
+    <string name="title_activity_settings">Settings</string>
+</resources>

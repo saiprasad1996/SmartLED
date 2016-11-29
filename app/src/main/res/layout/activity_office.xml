@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="tk.saiprasadm.smartled.Office">
+
+    <TextView
+        android:id="@+id/disp_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Set your lighting by changing the sliders of the below colors"
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/disp_text">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/redColor_tv_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Red Color Intensity" />
+
+            <SeekBar
+                android:id="@+id/red_intensity_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/redColor_tv_wifi"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/blueColor_tv_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/red_intensity_wifi"
+                android:layout_marginTop="20dp"
+                android:text="Blue Color Intensity" />
+
+            <SeekBar
+                android:id="@+id/blue_intensity_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blueColor_tv_wifi"
+                android:layout_marginTop="10dp"
+                android:indeterminate="false" />
+
+            <TextView
+                android:id="@+id/greenColor_tv_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blue_intensity_wifi"
+                android:layout_marginTop="20dp"
+                android:text="Green Color Intensity" />
+
+            <SeekBar
+                android:id="@+id/green_intensity_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/greenColor_tv_wifi"
+                android:layout_marginTop="10dp"
+                android:indeterminate="false" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/green_intensity_wifi"
+                android:layout_marginTop="20dp"
+
+                android:hint="Enter your username for authenication"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/set_color_btn_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Set Color"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
